@@ -30,7 +30,7 @@ The module expects a "config" directory to be present in the root of the calling
 ###### Default.js Module Expected in "config" Directory
 The module will attempt to load a "default" Node module in the config directory to use as a base/default configuration. Failure returns an empty object and a warning.
 ###### NODE_ENV Configuration File
-The module checks `process.NODE_ENV`, and if defined, attempts to load a config module of the same name. Failure returns an empty object and a warning.
+The module checks `process.env.NODE_ENV`, and if defined, attempts to load a config module of the same name. Failure returns an empty object and a warning.
 ###### Optional configOverrides Array
 You can pass a configOverrides key in the options object to process files to override configurations. This is expected to be an array of filenames, which will be processed sequentially, with the last being given greatest priority. The module will look for both a module named the same as the overrrides array entry, or a file with the environment name, a dash, and the override name.
 
