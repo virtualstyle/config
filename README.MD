@@ -15,7 +15,7 @@ Written out of a frustration with other Node configuration options, This is my c
 
 That being said, I might as well explain how it works since it's out here.
 
-This module is designed to accept and merge multiple configuration objects. It will look for a default configuration file, and an environment configuration file, and accept an object passed in. You can also specify an override file scheme as describe below using the configOverrides option. These objects are merged, in order, thus loading the default, then adding to/overriding that with the environment, then adding to that any override files, then adding to/overriding that with the passed in values.
+This module is designed to accept and merge multiple configuration objects. It will look for a default configuration file, and an environment configuration file, and accept an object passed in. You can also specify an override file scheme as described below, using the configOverrides option. These objects are merged, in order, thus loading the default, then adding to/overriding that with the environment, then adding to that any override files, then adding to/overriding that with the passed in values.
 
 ### Install:
 `yarn add @virtualstyle/config`
