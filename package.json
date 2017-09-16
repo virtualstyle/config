@@ -23,6 +23,6 @@
         "nyc": "11.2.1",
         "coveralls": "2.13.1"
     },
-    "repository": "github:virtualstyle/config"
+    "repository": "github:virtualstyle/config",
     "dependencies": {}
 }
