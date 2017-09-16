@@ -24,7 +24,7 @@ This module is designed to accept and merge multiple configuration objects. It w
 ###### Error Handling
 This module uses Node's require() to load config files. When a nonexistent file is found, the error is caught, an empty object is returned as the value for that require, and a warning emitted. If your app needs to die from missing config, you'll have to check after the load.
 ###### JavaScript (.js) Files for Configuration
-This module uses plain Node modules for configuration. Since Node handles JSON natively, you might be able to use JSON files, but I haven't tried. I prefer the freedom of being able to include anything, including functions and dynamic values, in the config, so I'm happy with plain .js files exported as Node modules.
+This module uses plain Node modules for configuration. These can export functions that  taking the options sent to config as a parameter and return an object, or they can export objects directly. They can also be JSON files.
 ###### Directory Named "config" Expected in Root or Passed in "configDir" Option
 The module expects a "config" directory to be present in the root of the calling module, or in a directory specified by passing a configDir option in the options object. Passing in the directory enables using this module in modules intended for global installation, and might be required for submodules, I haven't tried a module and a submodule that both use this module yet.
 ###### Default.js Module Expected in "config" Directory
