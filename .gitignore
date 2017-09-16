@@ -1,0 +1,8 @@
+node_modules
+vendor
+.idea
+.npmrc
+.yarnrc
+.php_cs.cache
+.phplint.cache
+.phplint-cache

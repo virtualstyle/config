@@ -1,0 +1,27 @@
+{
+    "name": "@virtualstyle/config",
+    "description": "This is a VirtualStyle Node module.",
+    "version": "0.1.0",
+    "main": "index.js",
+    "author": "Rob Wood <rob@virtualstyle.us> (https://virtualstyle.us)",
+    "license": "MIT",
+    "scripts": {
+        "code:jshint": "jshint index.js lib",
+        "code:jscs": "jscs -x index.js lib",
+        "code": "npm run code:jshint && npm run code:jscs",
+        "docs": "rm -rf docs && node_modules/.bin/jsdoc -c .jsdocrc",
+        "test": "mocha -R spec test/*-test.js",
+        "coverage": "nyc --reporter=text --report-dir docs/coverage mocha -R test/null-reporter test/*-test.js  && nyc --report-dir docs/coverage --reporter=html mocha -R test/null-reporter test/*-test.js",
+        "coveralls": "nyc report --reporter=text-lcov | coveralls"
+    },
+    "devDependencies": {
+        "colors": "1.1.2",
+        "jscs": "3.0.7",
+        "jsdoc": "3.5.4",
+        "jshint": "2.9.5",
+        "mocha": "3.5.0",
+        "nyc": "11.2.1",
+        "coveralls": "2.13.1"
+    },
+    "dependencies": {}
+}
