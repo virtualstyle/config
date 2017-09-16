@@ -7,5 +7,6 @@ module.exports = function (options) {
         option3: 'This is the default config option3',
         option4: 'This is the default config option4',
         option5: 'This is the default config option5',
+        option6: 'This is the default config option6',
     }
 };
