@@ -1,7 +1,7 @@
 {
     "name": "@virtualstyle/config",
     "description": "This is a VirtualStyle Node module.",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "main": "index.js",
     "author": "Rob Wood <rob@virtualstyle.us> (https://virtualstyle.us)",
     "license": "MIT",
@@ -16,12 +16,12 @@
     },
     "devDependencies": {
         "colors": "1.1.2",
+        "coveralls": "2.13.1",
         "jscs": "3.0.7",
         "jsdoc": "3.5.4",
         "jshint": "2.9.5",
         "mocha": "3.5.0",
-        "nyc": "11.2.1",
-        "coveralls": "2.13.1"
+        "nyc": "11.2.1"
     },
     "repository": "github:virtualstyle/config",
     "dependencies": {}
