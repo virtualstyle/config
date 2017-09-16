@@ -7,7 +7,7 @@
  * only for my own convenience and don't recommend its use by anyone else.
  *
  * @module @virtualstyle/config
- * @version 0.1.0
+ * @version 0.2.0
  * @exports config
  * @license MIT
  *
